@@ -1,0 +1,13 @@
+Synthetic DBMS_XPLAN excerpt
+SQL_ID  abc123xyz7890, child number 0
+Plan hash value: 3285471001
+
+| Id | Operation             | Name                | Starts | E-Rows | A-Rows | Buffers |
+|  0 | SELECT STATEMENT      |                     |      1 |        |  86400 | 2184000 |
+|  1 |  SORT ORDER BY        |                     |      1 |    100 |  86400 | 2184000 |
+|  2 |   PARTITION RANGE ALL |                     |      1 |    100 |  86400 | 2184000 |
+|  3 |    TABLE ACCESS FULL  | DEMO_VARIABLE_VALUE |    365 |    100 |  86400 | 2184000 |
+
+Predicate Information:
+2 - filter(TRUNC(VV_TIMESTAMP)=DATE '2026-09-01')
+3 - filter(VV_CE_ID=:CE_ID)

@@ -1,0 +1,4 @@
+2026-09-01T10:14:11+00:00 Synthetic diagnostic example
+Top foreground wait event: enq: SV - contention
+Sequence metadata supplied separately: CACHE 20, ORDER enabled
+No real hostname, database name or sequence name is included.
